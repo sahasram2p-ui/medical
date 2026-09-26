@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical AI Chatbot</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="chat-container">
+<div class="chat-header">
+<h1>🩺 Medical AI Chatbot</h1>
+<p>Ask questions related to medicine and health</p>
+</div>
+<div id="chat-box" class="chat-box">
+<div class="message bot-message">Hello! 👋 I can answer medical and health-related questions only. This chatbot provides general information and is not a substitute for professional medical advice.</div>
+</div>
+<div class="input-area">
+<input id="message-input" type="text" placeholder="Ask a medical or health question..." autocomplete="off">
+<button id="send-button">Send</button>
+</div>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
